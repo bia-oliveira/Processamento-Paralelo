@@ -1,1 +1,2 @@
-# Processamento-Paralelo
+Beatriz Santos de Oliveira
+Júlia de Araújo Ramos
