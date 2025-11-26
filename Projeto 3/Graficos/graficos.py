@@ -123,4 +123,24 @@ plt.savefig("grafico_escalabilidade_cuda.png", dpi=300)
 print("-> Gerado: grafico_escalabilidade_cuda.png")
 plt.close()
 
+# GRÁFICO 4: Eficiência Computacional (Barras de GFLOPS)
+plt.figure(figsize=(10, 6))
+
+# Barplot dos GFLOPS
+ax = sns.barplot(data=df_avg, x='Tamanho', y='GFLOPS', hue='Metodo', palette=colors)
+
+plt.title('Eficiência Computacional (GFLOPS)')
+plt.ylabel('GFLOPS (Bilhões de Op/s)')
+plt.xlabel('Tamanho da Matriz (N)')
+plt.legend(title='Implementação')
+
+# Adicionar valores no topo das barras 
+for container in ax.containers:
+    ax.bar_label(container, fmt='%.1f', padding=3, fontsize=9)
+
+plt.tight_layout()
+plt.savefig("grafico_eficiencia_cuda.png", dpi=300)
+print("-> Gerado: grafico_eficiencia_cuda.png")
+plt.close()
+
 print("\nProcesso finalizado com sucesso!")
