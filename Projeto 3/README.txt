@@ -25,3 +25,5 @@ Estrutura do projeto:
    2.2 Como Executar:
    Pré-requisitos: Garanta que os três arquivos .csv gerados na etapa anterior estejam nesta pasta.
    Executar: python graficos.py
+
+Esse projeto foi executado no wsl
